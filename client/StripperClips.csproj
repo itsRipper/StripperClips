@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>StripperClips</AssemblyName>
+    <RootNamespace>StripperClips</RootNamespace>
+    <Version>1.0.0</Version>
+    <!-- Keep exported and Git checkout builds equivalent. -->
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <EnableSourceLink>false</EnableSourceLink>
+    <PathMap>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', '..'))=/_/</PathMap>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <DebugType>portable</DebugType>
+    <SptRoot Condition="'$(SptRoot)' == ''">$(SPT_ROOT)</SptRoot>
+    <Managed>$(SptRoot)\EscapeFromTarkov_Data\Managed</Managed>
+  </PropertyGroup>
+
+  <Target Name="RequireSptRoot" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(Managed)\Assembly-CSharp.dll')"
+           Text="SPT installation not found. Pass -p:SptRoot=&lt;SPT folder&gt; or set SPT_ROOT (looked for $(Managed)\Assembly-CSharp.dll)." />
+  </Target>
+
+  <ItemGroup>
+    <GameReference Include="Assembly-CSharp;Comfort;AnimationSystem.Types;ItemComponent.Types;ItemTemplate.Types;Newtonsoft.Json;Sirenix.Serialization;UnityEngine;UnityEngine.CoreModule;UnityEngine.AnimationModule;UnityEngine.AssetBundleModule" />
+    <Reference Include="@(GameReference)">
+      <HintPath>$(Managed)\%(Identity).dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx"><HintPath>$(SptRoot)\BepInEx\core\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(SptRoot)\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

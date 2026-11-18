@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>StripperClips.Server</AssemblyName>
+    <RootNamespace>StripperClips.Server</RootNamespace>
+    <Version>1.0.0</Version>
+    <!-- Keep exported and Git checkout builds equivalent. -->
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <EnableSourceLink>false</EnableSourceLink>
+    <PathMap>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', '..'))=/_/</PathMap>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <SptRoot Condition="'$(SptRoot)' == ''">$(SPT_ROOT)</SptRoot>
+    <Runtime>$(SptRoot)\SPT_Runtime</Runtime>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+  <Target Name="RequireSptRoot" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(Runtime)\SPTarkov.Server.Core.dll')" Text="SPT server not found. Pass -p:SptRoot=&lt;install&gt; or set SPT_ROOT." />
+  </Target>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ServerReference Include="SPTarkov.Server.Core;SPTarkov.Common;SPTarkov.DI;SemanticVersioning" />
+    <Reference Include="@(ServerReference)">
+      <HintPath>$(Runtime)\%(Identity).dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bundles.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\items\*.bundle" Link="bundles\stripperclips\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="RequireItemBundles" BeforeTargets="Build">
+    <Error Condition="!Exists('..\items\item_stripper_clip_762x54r.bundle') Or !Exists('..\items\item_stripper_clip_762x39.bundle')" Text="Restore the supplied clip item bundles in items/. In a Git checkout, run git lfs pull." />
+  </Target>
+</Project>

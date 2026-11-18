@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+artifacts/
+dist/
+
+# IDE and user files
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Never commit game files, logs or profiles
+*.log
+*.dll
+*.pdb
+*.exe
+*.zip
+**/profiles/
+**/BepInEx/
+**/SPT_Runtime/
+**/EscapeFromTarkov_Data/

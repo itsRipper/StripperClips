@@ -1,0 +1,12 @@
+{
+    "manifest": [
+        {
+            "key": "stripperclips/item_stripper_clip_762x54r.bundle",
+            "dependencyKeys": ["shaders", "cubemaps"]
+        },
+        {
+            "key": "stripperclips/item_stripper_clip_762x39.bundle",
+            "dependencyKeys": ["shaders", "cubemaps"]
+        }
+    ]
+}

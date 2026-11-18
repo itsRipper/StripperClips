@@ -1,0 +1,287 @@
+{
+    "format": "foundation-clip-sidecar/1",
+    "name": "sks_stripper_reload",
+    "bundle": "sks_stripper_reload.bundle",
+    "asset": "assets/generated/sks_stripper_reload.anim",
+    "fps": 30.0,
+    "frames": 115,
+    "length": 3.799999952316284,
+    "paths": [
+        "Base HumanLCollarbone",
+        "Base HumanLCollarbone/Base HumanLUpperarm",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit11",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit11/Base HumanLDigit12",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit11/Base HumanLDigit12/Base HumanLDigit13",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit21",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit21/Base HumanLDigit22",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit21/Base HumanLDigit22/Base HumanLDigit23",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit31",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit31/Base HumanLDigit32",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit31/Base HumanLDigit32/Base HumanLDigit33",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit41",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit41/Base HumanLDigit42",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit41/Base HumanLDigit42/Base HumanLDigit43",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit51",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit51/Base HumanLDigit52",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit51/Base HumanLDigit52/Base HumanLDigit53",
+        "Base HumanRCollarbone",
+        "Base HumanRCollarbone/Base HumanRUpperarm",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit11",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit11/Base HumanRDigit12",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit11/Base HumanRDigit12/Base HumanRDigit13",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit21",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit21/Base HumanRDigit22",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit21/Base HumanRDigit22/Base HumanRDigit23",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit31",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit31/Base HumanRDigit32",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit31/Base HumanRDigit32/Base HumanRDigit33",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit41",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit41/Base HumanRDigit42",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit41/Base HumanRDigit42/Base HumanRDigit43",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit51",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit51/Base HumanRDigit52",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit51/Base HumanRDigit52/Base HumanRDigit53",
+        "Camera_animated",
+        "Weapon_root",
+        "Weapon_root/Weapon_root_anim",
+        "Weapon_root/Weapon_root_anim/weapon",
+        "Weapon_root/Weapon_root_anim/weapon/aim_camera",
+        "Weapon_root/Weapon_root_anim/weapon/Bend_Goal_Left",
+        "Weapon_root/Weapon_root_anim/weapon/Bend_Goal_Right",
+        "Weapon_root/Weapon_root_anim/weapon/mod_clip",
+        "Weapon_root/Weapon_root_anim/weapon/mod_magazine",
+        "Weapon_root/Weapon_root_anim/weapon/patron_in_weapon",
+        "Weapon_root/Weapon_root_anim/weapon/shellport",
+        "Weapon_root/Weapon_root_anim/weapon/smokeport",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_bolt_assembly",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_bolt_assembly/weapon_bolt_carrier",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_bolt_assembly/weapon_bolt_carrier/waepon_bolt",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_bolt_assembly/weapon_gas_piston",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_bolt_assembly/weapon_spring",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_catch",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_L_hand_marker",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_L_IK_marker",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_LCollarbone_marker",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_magazine_release",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_R_hand_marker",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_R_IK_marker",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_RCollarbone_marker",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_trigger_group",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_trigger_group/weapon_hammer",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_trigger_group/weapon_trigger",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_vest_IK_marker",
+        "Weapon_root/Weapon_root_anim/weapon/prop",
+        "Weapon_root/Weapon_root_anim/weapon/prop/prop_bone_001",
+        "Weapon_root/Weapon_root_anim/weapon/prop/prop_bone_002"
+    ],
+    "events": [
+        {
+            "time": 0.03333333507180214,
+            "name": "Sound",
+            "type": "String",
+            "value": "HandOff",
+            "native": true
+        },
+        {
+            "time": 0.5333333611488342,
+            "name": "Sound",
+            "type": "String",
+            "value": "HandleOut",
+            "native": true
+        },
+        {
+            "time": 0.7666666507720947,
+            "name": "Sound",
+            "type": "String",
+            "value": "SndHandOff",
+            "native": true
+        },
+        {
+            "time": 1.2000000476837159,
+            "name": "prop.show",
+            "type": "String",
+            "value": "clip",
+            "native": false
+        },
+        {
+            "time": 1.2000000476837159,
+            "name": "prop.show",
+            "type": "String",
+            "value": "rounds",
+            "native": false
+        },
+        {
+            "time": 1.2000000476837159,
+            "name": "Sound",
+            "type": "String",
+            "value": "SndAmmoInHand",
+            "native": true
+        },
+        {
+            "time": 1.7999999523162842,
+            "name": "Sound",
+            "type": "String",
+            "value": "SndRoundIn",
+            "native": true
+        },
+        {
+            "time": 2.0,
+            "name": "strip.split",
+            "type": "None",
+            "value": "",
+            "native": false
+        },
+        {
+            "time": 2.366666555404663,
+            "name": "strip.sink",
+            "type": "String",
+            "value": "1",
+            "native": false
+        },
+        {
+            "time": 2.4000000953674318,
+            "name": "strip.sink",
+            "type": "String",
+            "value": "2",
+            "native": false
+        },
+        {
+            "time": 2.433333396911621,
+            "name": "Sound",
+            "type": "String",
+            "value": "SndRoundIn",
+            "native": true
+        },
+        {
+            "time": 2.433333396911621,
+            "name": "strip.sink",
+            "type": "String",
+            "value": "3",
+            "native": false
+        },
+        {
+            "time": 2.4666666984558107,
+            "name": "strip.sink",
+            "type": "String",
+            "value": "4",
+            "native": false
+        },
+        {
+            "time": 2.566666603088379,
+            "name": "strip.load",
+            "type": "None",
+            "value": "",
+            "native": false
+        },
+        {
+            "time": 2.5999999046325685,
+            "name": "prop.hide",
+            "type": "String",
+            "value": "rounds",
+            "native": false
+        },
+        {
+            "time": 2.799999952316284,
+            "name": "Sound",
+            "type": "String",
+            "value": "SndHandOn",
+            "native": true
+        },
+        {
+            "time": 3.0999999046325685,
+            "name": "Sound",
+            "type": "String",
+            "value": "HandleIn",
+            "native": true
+        },
+        {
+            "time": 3.133333444595337,
+            "name": "strip.chamber",
+            "type": "None",
+            "value": "",
+            "native": false
+        },
+        {
+            "time": 3.433333396911621,
+            "name": "prop.hide",
+            "type": "String",
+            "value": "clip",
+            "native": false
+        },
+        {
+            "time": 3.5999999046325685,
+            "name": "Sound",
+            "type": "String",
+            "value": "GunFlip2",
+            "native": true
+        }
+    ],
+    "props": [
+        {
+            "id": "clip",
+            "slot": "Weapon_root/Weapon_root_anim/weapon/prop/prop_bone_001",
+            "source": "asset:assets/generated/sks_stripper_reload_clip.prefab",
+            "mesh_file": "",
+            "color": [
+                0.04500000178813934,
+                0.04500000178813934,
+                0.05000000074505806
+            ],
+            "lp": [
+                5.073162334667813e-9,
+                -4.947705578572936e-10,
+                5.447031714567174e-15
+            ],
+            "lr": [
+                -1.5144335563377355e-8,
+                -1.8272690738285747e-7,
+                -1.816174375335322e-7,
+                1.0
+            ],
+            "ls": [
+                1.0,
+                1.0000001192092896,
+                1.0000001192092896
+            ],
+            "visible": false
+        },
+        {
+            "id": "rounds",
+            "slot": "Weapon_root/Weapon_root_anim/weapon/prop/prop_bone_002",
+            "source": "asset:assets/generated/sks_stripper_reload_rounds.prefab",
+            "mesh_file": "",
+            "color": [
+                0.7799999713897705,
+                0.550000011920929,
+                0.25999999046325686
+            ],
+            "lp": [
+                5.073162334667813e-9,
+                -4.947705578572936e-10,
+                5.447031714567174e-15
+            ],
+            "lr": [
+                -1.5144335563377355e-8,
+                -1.8272690738285747e-7,
+                -1.816174375335322e-7,
+                1.0
+            ],
+            "ls": [
+                1.0,
+                1.0000001192092896,
+                1.0000001192092896
+            ],
+            "visible": false
+        }
+    ],
+    "source": "sks_stripper_reload_rig2.blend from probe F10 2026-11-15T20:12:30 | props from the clip model (model_mosin_clip.py), else as export_rc2",
+    "sha256": "965611293a77a8d5e571c9bbcb55017580c0ec993a3c2cd20c554241ebe7685d"
+}

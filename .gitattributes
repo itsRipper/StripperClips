@@ -1,0 +1,11 @@
+# Fixed line endings make the PDB source checksums, and so the compiled DLLs, identical
+# for every checkout of a commit.
+* text=auto eol=crlf
+*.sh text eol=lf
+# Release assets are stored byte for byte.
+clips/** -text
+items/** -text
+# Asset bundles are binary and large: Git LFS.
+*.bundle filter=lfs diff=lfs merge=lfs -text
+*.png binary
+*.jpg binary
