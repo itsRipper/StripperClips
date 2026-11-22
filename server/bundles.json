@@ -7,6 +7,10 @@
         {
             "key": "stripperclips/item_stripper_clip_762x39.bundle",
             "dependencyKeys": ["shaders", "cubemaps"]
+        },
+        {
+            "key": "stripperclips/item_stripper_clip_556x45.bundle",
+            "dependencyKeys": ["shaders", "cubemaps"]
         }
     ]
 }

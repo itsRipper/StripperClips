@@ -258,6 +258,5 @@
             "visible": false
         }
     ],
-    "source": "svt_stripper_reload_rig2.blend from bundle avt40_check_chamber | props from the clip model (model_mosin_clip.py), else as export_rc4",
     "sha256": "7fff6ea64ce5f889de82cc9765911ee16545ae731f6724ccbbca18285be370af"
 }

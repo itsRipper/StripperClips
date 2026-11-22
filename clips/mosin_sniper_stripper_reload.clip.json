@@ -246,6 +246,5 @@
             "visible": false
         }
     ],
-    "source": "mosin_sniper_stripper_reload_rig.blend from probe F10 2026-11-15T17:19:38 | props from the clip model (model_mosin_clip.py), else as export_rc3",
     "sha256": "e85a3a91c1f392731f0b1e32c6e209f719df5b157c81e7ff19de533b7dc20a5c"
 }

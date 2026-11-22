@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>StripperClips</AssemblyName>
     <RootNamespace>StripperClips</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <!-- Keep exported and Git checkout builds equivalent. -->
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
@@ -26,7 +26,7 @@
   </Target>
 
   <ItemGroup>
-    <GameReference Include="Assembly-CSharp;Comfort;AnimationSystem.Types;ItemComponent.Types;ItemTemplate.Types;Newtonsoft.Json;Sirenix.Serialization;UnityEngine;UnityEngine.CoreModule;UnityEngine.AnimationModule;UnityEngine.AssetBundleModule" />
+    <GameReference Include="Assembly-CSharp;DissonanceVoip;Comfort;AnimationSystem.Types;ItemComponent.Types;ItemTemplate.Types;Newtonsoft.Json;Sirenix.Serialization;UnityEngine;UnityEngine.CoreModule;UnityEngine.AnimationModule;UnityEngine.AssetBundleModule;UnityEngine.AudioModule;UnityEngine.UI" />
     <Reference Include="@(GameReference)">
       <HintPath>$(Managed)\%(Identity).dll</HintPath>
       <Private>false</Private>
