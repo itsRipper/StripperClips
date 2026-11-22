@@ -17,13 +17,14 @@ if (Test-Path -LiteralPath (Join-Path $root '.git')) {
     finally { Pop-Location }
     if ($dirty.Count -ne 0) { throw "Uncommitted changes:`n$($dirty -join "`n")" }
 }
-if (!$SkipBuild) { & (Join-Path $PSScriptRoot 'Build.ps1') -SptRoot $SptRoot }
+if (!$SkipBuild) { & (Join-Path $PSScriptRoot 'Build.ps1') -SptRoot $SptRoot -IncludeFika }
 
 $version = ([xml](Get-Content (Join-Path $root 'client\StripperClips.csproj') -Raw)).Project.PropertyGroup.Version | Where-Object { $_ } | Select-Object -First 1
 if (!$version) { throw 'Version not found in client\StripperClips.csproj.' }
 $docs = if (Test-Path -LiteralPath (Join-Path $root 'release\CHANGELOG.md')) { Join-Path $root 'release' } else { $root }
 $declared = [ordered]@{
     'server\StripperClips.Server.csproj' = "<Version>$version</Version>"
+    'fika\StripperClips.Fika.csproj'    = "<Version>$version</Version>"
     'client\Plugin.cs'                   = "`"StripperClips`", `"$version`")]"
     'server\ModMetadata.cs'              = "new(`"$version`")"
 }
@@ -42,6 +43,7 @@ $plugin = 'BepInEx/plugins/StripperClips'
 $mod = 'SPT_Runtime/user/mods/StripperClips'
 $layout = [ordered]@{
     "$plugin/StripperClips.dll"         = 'client\bin\Release\StripperClips.dll'
+    "$plugin/StripperClips.Fika.dll"    = 'fika\bin\Release\StripperClips.Fika.dll'
     "$mod/StripperClips.Server.dll"     = 'server\bin\Release\StripperClips.Server.dll'
     "$mod/bundles.json"                 = 'server\bundles.json'
 }
@@ -56,6 +58,9 @@ foreach ($family in $families) {
         $layout["$plugin/clips/$clip.clip.json"] = "clips\$clip.clip.json"
     }
 }
+$clip = 'stanag_magazine_load'
+$layout["$plugin/clips/$clip.bundle"] = "clips\$clip.bundle"
+$layout["$plugin/clips/$clip.clip.json"] = "clips\$clip.clip.json"
 # Keep the source build guide out of the installation README and carry the MIT text in the notices.
 $packageDocs = Join-Path $root 'artifacts\package-docs'
 New-Item -ItemType Directory -Force $packageDocs | Out-Null
@@ -67,7 +72,11 @@ $license = [IO.File]::ReadAllText((Join-Path $docs 'LICENSE'))
 [IO.File]::WriteAllText((Join-Path $packageDocs 'THIRD-PARTY-NOTICES.md'), ($notices.TrimEnd() + "`r`n`r`n## StripperClips licence`r`n`r`n" + $license))
 foreach ($doc in 'README.md', 'THIRD-PARTY-NOTICES.md') { $layout["$plugin/$doc"] = "artifacts\package-docs\$doc" }
 foreach ($source in $layout.Values) {
-    if (!(Test-Path -LiteralPath (Join-Path $root $source))) { throw "Missing $source; run scripts\Build.ps1 first." }
+    $file = Join-Path $root $source
+    if (!(Test-Path -LiteralPath $file)) { throw "Missing $source; run scripts\Build.ps1 -IncludeFika first." }
+    if ($source -like '*.dll' -and [Reflection.AssemblyName]::GetAssemblyName($file).Version -ne [version]"$version.0") {
+        throw "Unexpected assembly version in $source; rebuild for $version."
+    }
 }
 foreach ($entry in $layout.GetEnumerator() | Where-Object { $_.Key -like "$mod/*" -and $_.Key -notlike '*.dll' }) {
     $built = Join-Path $root ('server\bin\Release\' + $entry.Key.Substring($mod.Length + 1).Replace('/', '\'))

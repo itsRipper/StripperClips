@@ -232,6 +232,5 @@
             "visible": false
         }
     ],
-    "source": "mosin_stripper_reload_rig5_open.blend from probe F10 2026-11-15T17:19:38 | props from the clip model (model_mosin_clip.py), else as export_rc2",
     "sha256": "6c1e827e8d425baa6dd3e6f997af85ac1aafb29b340363c8fc5f859c7f6f6828"
 }

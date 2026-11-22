@@ -27,7 +27,8 @@ public abstract class ModPlugin : BaseUnityPlugin
 
     protected virtual void Update() => Features.Update(Time.deltaTime);
 
-    private void OnDestroy()
+    // Unity calls only the most derived OnDestroy, so a derived plugin must override and call this.
+    protected virtual void OnDestroy()
     {
         if (Features == null) return;
         Features.Shutdown();

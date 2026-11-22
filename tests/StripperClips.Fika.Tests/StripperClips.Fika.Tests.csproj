@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\client\Pure\ReloadVisualOrder.cs" />
+    <Compile Include="..\..\client\Pure\ReloadRules.cs" />
+    <Compile Include="..\..\client\Pure\StanagRules.cs" />
+    <Compile Include="..\..\client\Pure\StanagVisual.cs" />
+    <Compile Include="..\..\fika\ReloadPacketV1.cs" />
+    <Reference Include="Fika.Core"><HintPath>$(FikaCore)</HintPath></Reference>
+  </ItemGroup>
+</Project>

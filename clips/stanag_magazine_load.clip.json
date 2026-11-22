@@ -1,0 +1,244 @@
+{
+    "format": "foundation-clip-sidecar/1",
+    "name": "stanag_magazine_load",
+    "bundle": "stanag_magazine_load.bundle",
+    "asset": "assets/generated/stanag_magazine_load.anim",
+    "fps": 30.0,
+    "frames": 124,
+    "length": 4.099999904632568,
+    "paths": [
+        "Weapon_root/Weapon_root_anim",
+        "Weapon_root/Weapon_root_anim/weapon/STANAG/Magazine",
+        "Weapon_root/Weapon_root_anim/weapon/STANAG/Magazine/Guide",
+        "Weapon_root/Weapon_root_anim/weapon/STANAG/Magazine/Clip",
+        "Weapon_root/Weapon_root_anim/weapon/STANAG/Stroke",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_L_IK_marker",
+        "Weapon_root/Weapon_root_anim/weapon/Bend_Goal_Left",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit11",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit11/Base HumanLDigit12",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit11/Base HumanLDigit12/Base HumanLDigit13",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit21",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit21/Base HumanLDigit22",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit21/Base HumanLDigit22/Base HumanLDigit23",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit31",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit31/Base HumanLDigit32",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit31/Base HumanLDigit32/Base HumanLDigit33",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit41",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit41/Base HumanLDigit42",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit41/Base HumanLDigit42/Base HumanLDigit43",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit51",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit51/Base HumanLDigit52",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm/Base HumanLDigit51/Base HumanLDigit52/Base HumanLDigit53",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_R_IK_marker",
+        "Weapon_root/Weapon_root_anim/weapon/Bend_Goal_Right",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit11",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit11/Base HumanRDigit12",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit11/Base HumanRDigit12/Base HumanRDigit13",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit21",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit21/Base HumanRDigit22",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit21/Base HumanRDigit22/Base HumanRDigit23",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit31",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit31/Base HumanRDigit32",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit31/Base HumanRDigit32/Base HumanRDigit33",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit41",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit41/Base HumanRDigit42",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit41/Base HumanRDigit42/Base HumanRDigit43",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit51",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit51/Base HumanRDigit52",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm/Base HumanRDigit51/Base HumanRDigit52/Base HumanRDigit53",
+        "Weapon_root/Weapon_root_anim/weapon/item",
+        "Weapon_root/Weapon_root_anim/weapon/smokeport",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3/Base HumanLPalm",
+        "Weapon_root/Weapon_root_anim/weapon/shellport",
+        "Camera_animated",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_LCollarbone_marker",
+        "Weapon_root/Weapon_root_anim/weapon/item/item_ranger_1500_LOD1",
+        "Base HumanRCollarbone",
+        "Base HumanLCollarbone/Base HumanLUpperarm",
+        "Base HumanRCollarbone/Base HumanRUpperarm",
+        "Weapon_root/Weapon_root_anim/weapon/item/linza",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1/Base HumanRForearm2/Base HumanRForearm3/Base HumanRPalm",
+        "Weapon_root/Weapon_root_anim/weapon/item/back_linza",
+        "Base HumanLCollarbone",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2/Base HumanLForearm3",
+        "Base HumanRCollarbone/Base HumanRUpperarm/Base HumanRForearm1",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_RCollarbone_marker",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_vest_IK_marker",
+        "Weapon_root",
+        "Weapon_root/Weapon_root_anim/weapon",
+        "Weapon_root/Weapon_root_anim/weapon/patron_in_weapon",
+        "Weapon_root/Weapon_root_anim/weapon/item/item_ranger_1500_LOD0",
+        "Weapon_root/Weapon_root_anim/weapon/weapon_R_hand_marker",
+        "Base HumanLCollarbone/Base HumanLUpperarm/Base HumanLForearm1/Base HumanLForearm2"
+    ],
+    "events": [
+        {
+            "time": 0.1666666716337204,
+            "name": "prop.show",
+            "type": "",
+            "value": "magazine",
+            "native": false
+        },
+        {
+            "time": 0.2666666805744171,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "draw",
+            "native": false
+        },
+        {
+            "time": 0.6000000238418579,
+            "name": "prop.show",
+            "type": "",
+            "value": "guide",
+            "native": false
+        },
+        {
+            "time": 0.699999988079071,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "guide_draw",
+            "native": false
+        },
+        {
+            "time": 1.2000000476837159,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "guide_seat",
+            "native": false
+        },
+        {
+            "time": 1.4666666984558106,
+            "name": "prop.show",
+            "type": "",
+            "value": "clip",
+            "native": false
+        },
+        {
+            "time": 1.5666667222976685,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "clip_draw",
+            "native": false
+        },
+        {
+            "time": 1.899999976158142,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "clip_seat",
+            "native": false
+        },
+        {
+            "time": 2.0999999046325685,
+            "name": "stanag.commit",
+            "type": "",
+            "value": "",
+            "native": false
+        },
+        {
+            "time": 2.1666667461395265,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "round",
+            "native": false
+        },
+        {
+            "time": 2.3333332538604738,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "round",
+            "native": false
+        },
+        {
+            "time": 2.5,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "round",
+            "native": false
+        },
+        {
+            "time": 2.6666667461395265,
+            "name": "stanag.seated",
+            "type": "",
+            "value": "",
+            "native": false
+        },
+        {
+            "time": 2.933333396911621,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "clip_out",
+            "native": false
+        },
+        {
+            "time": 3.200000047683716,
+            "name": "prop.hide",
+            "type": "",
+            "value": "clip",
+            "native": false
+        },
+        {
+            "time": 3.5333333015441896,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "guide_out",
+            "native": false
+        },
+        {
+            "time": 3.8333332538604738,
+            "name": "prop.hide",
+            "type": "",
+            "value": "guide",
+            "native": false
+        },
+        {
+            "time": 3.9000000953674318,
+            "name": "stanag.sfx",
+            "type": "",
+            "value": "stow",
+            "native": false
+        },
+        {
+            "time": 3.9666666984558107,
+            "name": "prop.hide",
+            "type": "",
+            "value": "magazine",
+            "native": false
+        }
+    ],
+    "props": [
+        {
+            "id": "guide",
+            "slot": "Weapon_root/Weapon_root_anim/weapon/STANAG/Magazine/Guide",
+            "source": "asset:assets/generated/stanag_magazine_load_guide.prefab",
+            "mesh_file": "",
+            "color": [
+                0.07500000298023224,
+                0.07999999821186066,
+                0.08500000089406967,
+                1.0
+            ],
+            "lp": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "lr": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "ls": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "visible": false
+        }
+    ],
+    "sha256": "4aa96a1e8c64985bae49c133c023c04b58fa160a4f1f961a0fc2faff76ea6b53"
+}

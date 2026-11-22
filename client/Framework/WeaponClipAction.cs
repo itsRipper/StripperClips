@@ -46,6 +46,7 @@ public sealed class WeaponClipAction
     // Return pooled game objects before destroying their parent props.
     public event Action<string>? Finishing;
     public event Action<string>? Finished;
+    internal Func<bool>? ContinuePlaying { get; set; }
 
     public Player Owner => _owner;
     public Player.FirearmController Hands => _hands;
@@ -91,6 +92,8 @@ public sealed class WeaponClipAction
         hands.CurrentOperation != null && hands.CurrentOperation.GetType() == typeof(Player.FirearmController.Idling);
 
     public void Stop(string reason) => _player.Stop(reason);
+    internal void HoldAt(string name) => _player.HoldAt(name);
+    internal void Resume() => _player.Resume();
 
     public bool ShowParts(string propId, int from, int to) => _props != null && _props.ShowParts(propId, from, to);
 
@@ -104,6 +107,7 @@ public sealed class WeaponClipAction
             if (!ReferenceEquals(_owner.HandsController, _hands)) { Stop("hands_changed"); return; }
             if (!_owner.HealthController.IsAlive) { Stop("dead"); return; }
             if (!IsIdle(_hands)) { Stop("native_operation"); return; }
+            if (ContinuePlaying?.Invoke() == false) { Stop("context_changed"); return; }
             _player.AfterArmsAnimator(deltaTime);
         }
         catch (Exception error)

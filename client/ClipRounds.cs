@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Comfort.Common;
 using EFT;
@@ -30,6 +31,13 @@ internal sealed class ClipRounds
 
     public static ClipRounds Bind(WeaponClipAction action, Magazine clip)
     {
+        var rounds = Bind(action.Prop, clip);
+        action.Finishing += _ => rounds.Release();
+        return rounds;
+    }
+
+    internal static ClipRounds Bind(Func<string, GameObject?> findProp, Magazine clip)
+    {
         var rounds = new ClipRounds();
         var capacity = clip.MaxCount;
         var held = clip.Count;
@@ -41,7 +49,7 @@ internal sealed class ClipRounds
         var skipped = 0;
         foreach (var (prop, offset) in new[] { ("rounds", 0), ("clip", 1) })
         {
-            var root = action.Prop(prop);
+            var root = findProp(prop);
             if (root == null) continue;
             foreach (var part in root.GetComponentsInChildren<Transform>(true))
             {
@@ -52,7 +60,6 @@ internal sealed class ClipRounds
             }
         }
         StripperReload.Log.LogInfo(TraceLine.Format("STRIPPER_ROUNDS", ("placed", rounds.Count), ("kept_baked", skipped), ("clip", Describe(byPosition))));
-        action.Finishing += _ => rounds.Release();
         return rounds;
     }
 
